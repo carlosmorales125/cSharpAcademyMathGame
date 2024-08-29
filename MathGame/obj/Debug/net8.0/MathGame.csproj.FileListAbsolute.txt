@@ -1,0 +1,14 @@
+/Users/carlos/RiderProjects/MathGame/MathGame/bin/Debug/net8.0/MathGame
+/Users/carlos/RiderProjects/MathGame/MathGame/bin/Debug/net8.0/MathGame.deps.json
+/Users/carlos/RiderProjects/MathGame/MathGame/bin/Debug/net8.0/MathGame.runtimeconfig.json
+/Users/carlos/RiderProjects/MathGame/MathGame/bin/Debug/net8.0/MathGame.dll
+/Users/carlos/RiderProjects/MathGame/MathGame/bin/Debug/net8.0/MathGame.pdb
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.AssemblyInfoInputs.cache
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.AssemblyInfo.cs
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.csproj.CoreCompileInputs.cache
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.dll
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/refint/MathGame.dll
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.pdb
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/MathGame.genruntimeconfig.cache
+/Users/carlos/RiderProjects/MathGame/MathGame/obj/Debug/net8.0/ref/MathGame.dll
