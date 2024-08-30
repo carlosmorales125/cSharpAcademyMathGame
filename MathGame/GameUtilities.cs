@@ -101,16 +101,17 @@ public class GameUtilities
             Console.WriteLine(GetQuestion(firstNumber, secondNumber, mathOperator));
 
             var userInput = Console.ReadLine();
-            var userAnswer = -1;
+            int userAnswer;
             var tries = 0;
 
-            while (userAnswer != answer && tries < 2)
+            do
             {
                 if (int.TryParse(userInput, out userAnswer))
                 {
                     if (userAnswer == answer)
                     {
-                        Console.WriteLine($"Correct! {firstNumber} {mathOperator} {secondNumber} is {answer}. Good job!");
+                        Console.WriteLine(
+                            $"Correct! {firstNumber} {mathOperator} {secondNumber} is {answer}. Good job!");
                         AddToHistory(new Answer
                         {
                             GameType = gameType,
@@ -123,7 +124,7 @@ public class GameUtilities
                     }
                     else
                     {
-                        Console.WriteLine($"Sorry! Try again. You have {2 -tries} left.");
+                        Console.WriteLine($"Sorry! Try again. You have {2 - tries} left.");
                         Console.WriteLine(GetQuestion(firstNumber, secondNumber, mathOperator));
                         AddToHistory(new Answer
                         {
@@ -134,14 +135,17 @@ public class GameUtilities
                             IsCorrect = false
                         });
                     }
+
                     tries++;
                 }
                 else
                 {
                     Console.WriteLine($"Invalid input. Please enter a number. You have {2 - tries} tries left.");
                 }
+
                 userInput = Console.ReadLine();
-            }
+            } while (userAnswer != answer && tries < 2);
+            
             if (userAnswer != answer)
             {
                 Console.WriteLine($"Sorry but your answers were incorrect! The correct answer is {answer}.");
