@@ -8,11 +8,3 @@ public class Answer
     public int AnswerValue;
     public bool IsCorrect;
 }
-
-public enum GameType
-{
-    Addition = 1,
-    Subtraction,
-    Multiplication,
-    Division,
-}

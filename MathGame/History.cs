@@ -8,18 +8,6 @@ public class History
     {
         _answers.Add(answer);
     }
-    
-    private string GetMathOperator(GameType gameType)
-    {
-        return gameType switch
-        {
-            GameType.Addition => "+",
-            GameType.Subtraction => "-",
-            GameType.Multiplication => "*",
-            GameType.Division => "/",
-            _ => throw new ArgumentOutOfRangeException(nameof(gameType), gameType, null)
-        };
-    }
 
     public void ShowHistory()
     {
@@ -35,9 +23,9 @@ public class History
             foreach (var answer in _answers)
             {
                 Console.WriteLine("--------------------------------------------------");
-                string mathOperator = GetMathOperator(answer.GameType);
+                string mathOperator = GameUtilities.GetMathOperator(answer.GameType);
                 var correctMessage = answer.IsCorrect ? "Your answer was Correct" : "Your answer was Incorrect";
-                Console.WriteLine($"{answer.GameType} - {answer.FirstNumber} {mathOperator} {answer.SecondNumber} = {answer.AnswerValue} - {correctMessage}");
+                Console.WriteLine($"{answer.GameType} : {answer.FirstNumber} {mathOperator} {answer.SecondNumber} = {answer.AnswerValue} : {correctMessage}");
                 Console.WriteLine("--------------------------------------------------");
             }
         }
